@@ -1,0 +1,27 @@
+
+Pet is an object-oriented prototype-based language optimized for developer productivity.
+
+Language features unification principles introduced by Io and its ancestors:
+- everything is an object
+- object is a collection of properties
+- every operation is a message
+- every object may have any number of prototype objects
+- no namespaces and global variables: 
+- minimal syntax: JSON + messages and identifiers
+
+Syntax:
+  
+  (actually, true/false/null are parsed as message sends)
+  anyspace = (" " anyspace) | ""
+  array = "[" anyspace 
+  json  = true | false | null | number | string | array | hash
+  
+  
+Pet syntax extension for Objective-C
+
+  object release                 => [object release]
+  array[addObject:obj atIndex:1] => [array addObject:obj atIndex:1]
+  array[addObjectsFromArray:[]]  => [array addObjectsFromArray:[NSMutableArray array]]
+  
+
+
